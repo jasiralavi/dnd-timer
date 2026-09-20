@@ -11,6 +11,9 @@ It is designed for meetings, focused work, prayer, sleep, study, and any situati
 - Editable and reorderable presets
 - System, light, and dark appearance modes
 - Separate **Allow vibration** and **Allow alarms** controls
+- Default-on **Mute media** control for music, videos, and games
+- Repeating DND schedules with weekday and overnight support
+- System, 12-hour, and 24-hour time display modes
 - Exact sound-return time before starting
 - Live countdown and progress indicator
 - Extend an active timer by 15 minutes, 30 minutes, or 1 hour
@@ -41,9 +44,9 @@ It is designed for meetings, focused work, prayer, sleep, study, and any situati
 
 1. Open the repository's **Actions** tab.
 2. Open the latest successful **Build Android APK** run.
-3. Under **Artifacts**, download **DND-Timer-v1.2.1-APK**. A GitHub account may be required to download Actions artifacts.
+3. Under **Artifacts**, download **DND-Timer-v1.3.0-APK**. A GitHub account may be required to download Actions artifacts.
 4. Extract the downloaded ZIP.
-5. Install `DND-Timer-v1.2.1-release.apk` on the Android device.
+5. Install `DND-Timer-v1.3.0-release.apk` on the Android device.
 6. If Android blocks the installation, allow installation from the browser or file manager used to open the APK.
 
 Version 1.2.1 introduces the permanent DSYNZ signing certificate. If Android reports an app conflict with an earlier test build, uninstall that test build once before installing 1.2.1. Later DSYNZ-signed updates can install normally without removing the app.
@@ -62,11 +65,21 @@ Version 1.2.1 introduces the permanent DSYNZ signing certificate. If Android rep
 
 1. Choose whether calls and notifications may vibrate.
 2. Choose whether scheduled alarms may ring.
-3. Tap a preset or swipe the hour and minute wheels.
-4. Check the displayed **Sound returns at** time.
-5. Tap **Start Do Not Disturb**.
+3. Choose whether media audio should be muted. This is on by default.
+4. Tap a preset or swipe the hour and minute wheels.
+5. Check the displayed **Sound returns at** time.
+6. Tap **Start Do Not Disturb**.
 
 While DND is active, use the app, widget, or notification to extend the timer. Ending DND from the app or widget opens a confirmation screen before sound is restored.
+
+## Add a repeating schedule
+
+1. Tap **Schedules** on the timer screen.
+2. Tap **+** or **Add schedule**.
+3. Enter a title and choose the start and end times.
+4. Select one or more weekdays, then tap **Save**.
+
+Schedules can cross midnight, such as 22:00–07:00. Use the switch beside a schedule to pause it without deleting it. Tap an existing schedule to edit or delete it. Schedule times use the device timezone, and their display follows the **System / 12 hour / 24 hour** choice in Settings.
 
 ## Add the widget
 
@@ -103,14 +116,13 @@ Setting names vary between Android versions and manufacturers. The app still use
 
 ## Sound behaviour
 
-| Vibration | Alarms | Behaviour |
+| Option | On | Off |
 | --- | --- | --- |
-| Off | Off | Total silence |
-| Off | On | Only scheduled alarms can make sound |
-| On | Off | Calls and notifications may vibrate; alarm audio is temporarily muted |
-| On | On | Calls and notifications may vibrate; scheduled alarms can ring |
+| Allow vibration | Calls and notifications may vibrate | Calls and notifications do not vibrate |
+| Allow alarms | Scheduled alarms can ring | Alarm audio is temporarily muted |
+| Mute media | Music, videos, and games are temporarily muted | Media volume is left unchanged |
 
-The app captures the previous DND filter, ringer mode, and alarm volume before starting. It restores those values when the timer ends or the user ends DND early.
+The app captures the previous DND filter, ringer mode, alarm volume, and media volume before starting. It restores those values when the timer ends or the user ends DND early.
 
 ## Android requirements
 
@@ -149,6 +161,7 @@ Artifacts are retained for 14 days.
 - `timer/DndController.kt` — DND, ringer, and alarm changes
 - `timer/AlarmScheduler.kt` — precise and fallback timer expiry
 - `timer/TimerNotification.kt` — active-timer notification
+- `schedule/` — repeating schedule storage, alarm calculation, and receivers
 - `quicktile/DndTileService.kt` — Quick Settings entry point
 - `widget/DndTimerWidgetProvider.kt` — home-screen widget behaviour
 
@@ -158,7 +171,7 @@ Android manufacturers can customise DND, alarms, widgets, and background executi
 
 ## Status
 
-Version 1.2.1 fixes quick-preset selection, light-theme status-bar contrast, and main-screen spacing. It is being prepared for Google Play and F-Droid. Feedback and contributions are welcome through GitHub Issues.
+Version 1.3.0 adds repeating schedules, configurable clock formatting, and default-on media muting. It is being prepared for Google Play and F-Droid. Feedback and contributions are welcome through GitHub Issues.
 
 ## Privacy and licence
 
