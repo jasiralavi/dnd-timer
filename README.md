@@ -25,30 +25,30 @@ It is designed for meetings, focused work, prayer, sleep, study, and any situati
 
 | Timer — light | Timer — dark | Settings — dark |
 | --- | --- | --- |
-| <img src="02-timer-light.jpg" width="230" alt="DND Timer setup screen in light mode"> | <img src="03-timer-dark.jpg" width="230" alt="DND Timer setup screen in dark mode"> | <img src="01-settings-dark.jpg" width="230" alt="DND Timer settings in dark mode"> |
+| <img src="screenshots/02-timer-light.jpg" width="230" alt="DND Timer setup screen in light mode"> | <img src="screenshots/03-timer-dark.jpg" width="230" alt="DND Timer setup screen in dark mode"> | <img src="screenshots/01-settings-dark.jpg" width="230" alt="DND Timer settings in dark mode"> |
 
 | Active — light | Active — dark | Notification and tile |
 | --- | --- | --- |
-| <img src="08-active-light.jpg" width="230" alt="Active DND countdown in light mode"> | <img src="04-active-dark.jpg" width="230" alt="Active DND countdown in dark mode"> | <img src="07-quick-settings-notification.jpg" width="230" alt="DND Timer Quick Settings tile and active notification"> |
+| <img src="screenshots/08-active-light.jpg" width="230" alt="Active DND countdown in light mode"> | <img src="screenshots/04-active-dark.jpg" width="230" alt="Active DND countdown in dark mode"> | <img src="screenshots/07-quick-settings-notification.jpg" width="230" alt="DND Timer Quick Settings tile and active notification"> |
 
 ### Home-screen widget
 
 | Ready — wide | Ready — narrow | Active |
 | --- | --- | --- |
-| <img src="09-widget-idle-wide.jpg" width="230" alt="Wide idle DND Timer widget"> | <img src="10-widget-idle-narrow.jpg" width="230" alt="Narrow idle DND Timer widget"> | <img src="05-widget-active.jpg" width="230" alt="Active DND Timer widget"> |
+| <img src="screenshots/09-widget-idle-wide.jpg" width="230" alt="Wide idle DND Timer widget"> | <img src="screenshots/10-widget-idle-narrow.jpg" width="230" alt="Narrow idle DND Timer widget"> | <img src="screenshots/05-widget-active.jpg" width="230" alt="Active DND Timer widget"> |
 
 ## Install the test build
 
 1. Open the repository's **Actions** tab.
 2. Open the latest successful **Build Android APK** run.
-3. Under **Artifacts**, download **DND-Timer-APK**. A GitHub account may be required to download Actions artifacts.
+3. Under **Artifacts**, download **DND-Timer-v1.2.1-APK**. A GitHub account may be required to download Actions artifacts.
 4. Extract the downloaded ZIP.
-5. Install `DND-Timer-v1.2-debug.apk` on the Android device.
+5. Install `DND-Timer-v1.2.1-release.apk` on the Android device.
 6. If Android blocks the installation, allow installation from the browser or file manager used to open the APK.
 
-Development builds may use a different signing certificate from an earlier test or store release. If Android reports an app conflict, uninstall the old test build once and install the new build. Store releases will use a protected production signing key.
+Version 1.2.1 introduces the permanent DSYNZ signing certificate. If Android reports an app conflict with an earlier test build, uninstall that test build once before installing 1.2.1. Later DSYNZ-signed updates can install normally without removing the app.
 
-> This is a development build. Review the source and use it at your own discretion.
+> This is a pre-release test build. Review the source and use it at your own discretion.
 
 ## First-run setup
 
@@ -121,7 +121,7 @@ The app captures the previous DND filter, ringer mode, and alarm volume before s
 
 ## Build from source
 
-1. Download and extract `DND-Timer-Android-Source-v1.2.zip`.
+1. Download or clone the source repository.
 2. Open the included `dnd-timer` folder in Android Studio.
 3. Allow Android Studio to install SDK 36 and complete the Gradle sync.
 4. Select **Build > Build APK(s)**.
@@ -158,7 +158,7 @@ Android manufacturers can customise DND, alarms, widgets, and background executi
 
 ## Status
 
-Version 1.2 is being prepared for Google Play and F-Droid. Feedback and contributions are welcome through GitHub Issues.
+Version 1.2.1 fixes quick-preset selection, light-theme status-bar contrast, and main-screen spacing. It is being prepared for Google Play and F-Droid. Feedback and contributions are welcome through GitHub Issues.
 
 ## Privacy and licence
 
