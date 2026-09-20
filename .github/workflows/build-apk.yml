@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Unpack Android project
-        run: unzip -q DND-Timer-Android-Source-v1.2.1.zip
+        run: unzip -q DND-Timer-Android-Source-v1.3.0.zip
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
@@ -51,15 +51,15 @@ jobs:
 
       - name: Prepare release files
         run: |
-          cp dnd-timer/app/build/outputs/apk/release/app-release.apk DND-Timer-v1.2.1-release.apk
-          cp dnd-timer/app/build/outputs/bundle/release/app-release.aab DND-Timer-v1.2.1-release.aab
+          cp dnd-timer/app/build/outputs/apk/release/app-release.apk DND-Timer-v1.3.0-release.apk
+          cp dnd-timer/app/build/outputs/bundle/release/app-release.aab DND-Timer-v1.3.0-release.aab
 
       - name: Upload release files
         uses: actions/upload-artifact@v4
         with:
-          name: DND-Timer-v1.2.1-Release
+          name: DND-Timer-v1.3.0-Release
           path: |
-            DND-Timer-v1.2.1-release.apk
-            DND-Timer-v1.2.1-release.aab
+            DND-Timer-v1.3.0-release.apk
+            DND-Timer-v1.3.0-release.aab
           if-no-files-found: error
           retention-days: 30
