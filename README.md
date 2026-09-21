@@ -27,19 +27,17 @@ It is designed for meetings, focused work, prayer, sleep, study, and any situati
 
 ## Screenshots
 
-| Timer — light | Timer — dark | Settings — dark |
+| Timer — dark | Timer — light | Active timer — light |
 | --- | --- | --- |
-| <img src="screenshots/02-timer-light.jpg" width="230" alt="DND Timer setup screen in light mode"> | <img src="screenshots/03-timer-dark.jpg" width="230" alt="DND Timer setup screen in dark mode"> | <img src="screenshots/01-settings-dark.jpg" width="230" alt="DND Timer settings in dark mode"> |
+| <img src="screenshots/01-timer-dark.jpg" width="230" alt="DND Timer setup screen in dark mode"> | <img src="screenshots/02-timer-light.jpg" width="230" alt="DND Timer setup screen in light mode"> | <img src="screenshots/03-active-timer-light.jpg" width="230" alt="Active DND countdown in light mode"> |
 
-| Active — light | Active — dark | Notification and tile |
+| Settings | Schedules | Edit schedule |
 | --- | --- | --- |
-| <img src="screenshots/08-active-light.jpg" width="230" alt="Active DND countdown in light mode"> | <img src="screenshots/04-active-dark.jpg" width="230" alt="Active DND countdown in dark mode"> | <img src="screenshots/07-quick-settings-notification.jpg" width="230" alt="DND Timer Quick Settings tile and active notification"> |
+| <img src="screenshots/05-settings-light.jpg" width="230" alt="DND Timer settings in light mode"> | <img src="screenshots/08-schedules-light.jpg" width="230" alt="Recurring DND schedules list"> | <img src="screenshots/09-edit-schedule-light.jpg" width="230" alt="Edit recurring DND schedule screen"> |
 
-### Home-screen widget
-
-| Ready — wide | Ready — narrow | Active |
+| Quick Settings and notification | Widget — ready | Widget — active |
 | --- | --- | --- |
-| <img src="screenshots/09-widget-idle-wide.jpg" width="230" alt="Wide idle DND Timer widget"> | <img src="screenshots/10-widget-idle-narrow.jpg" width="230" alt="Narrow idle DND Timer widget"> | <img src="screenshots/05-widget-active.jpg" width="230" alt="Active DND Timer widget"> |
+| <img src="screenshots/04-quick-settings-notification.jpg" width="230" alt="Active DND Timer Quick Settings tile and notification"> | <img src="screenshots/06-widget-ready.jpg" width="230" alt="Ready DND Timer home-screen widget"> | <img src="screenshots/07-widget-active.jpg" width="230" alt="Active DND Timer home-screen widget"> |
 
 ## Install the test build
 
