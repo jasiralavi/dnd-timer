@@ -11,6 +11,7 @@ It is designed for meetings, focused work, prayer, sleep, study, and any situati
 - Editable and reorderable presets
 - System, light, and dark appearance modes
 - Separate **Allow vibration** and **Allow alarms** controls
+- Compact one-row silence controls keep the Start button within easy reach
 - Default-on **Mute media** control for music, videos, and games
 - Repeating DND schedules with weekday and overnight support
 - System, 12-hour, and 24-hour time display modes
@@ -44,9 +45,9 @@ It is designed for meetings, focused work, prayer, sleep, study, and any situati
 
 1. Open the repository's **Actions** tab.
 2. Open the latest successful **Build Android APK** run.
-3. Under **Artifacts**, download **DND-Timer-v1.3.0-APK**. A GitHub account may be required to download Actions artifacts.
+3. Under **Artifacts**, download **DND-Timer-v1.3.1-Release**. A GitHub account may be required to download Actions artifacts.
 4. Extract the downloaded ZIP.
-5. Install `DND-Timer-v1.3.0-release.apk` on the Android device.
+5. Install `DND-Timer-v1.3.1-release.apk` on the Android device.
 6. If Android blocks the installation, allow installation from the browser or file manager used to open the APK.
 
 Version 1.2.1 introduces the permanent DSYNZ signing certificate. If Android reports an app conflict with an earlier test build, uninstall that test build once before installing 1.2.1. Later DSYNZ-signed updates can install normally without removing the app.
@@ -171,7 +172,7 @@ Android manufacturers can customise DND, alarms, widgets, and background executi
 
 ## Status
 
-Version 1.3.0 adds repeating schedules, configurable clock formatting, and default-on media muting. It is being prepared for Google Play and F-Droid. Feedback and contributions are welcome through GitHub Issues.
+Version 1.3.1 compacts the timer screen's silence options into a single row so the Start button remains visible without scrolling. It also includes the recurring schedules, configurable clock formatting, and media muting introduced in 1.3.0. It is being prepared for Google Play and F-Droid. Feedback and contributions are welcome through GitHub Issues.
 
 ## Privacy and licence
 
